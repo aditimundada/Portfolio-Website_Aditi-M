@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Explore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+  .Explore{
+    font-family: cursive;
+    font-size: 70px;
+    text-align: left;
+    
+    margin-top: 80px;
+    margin-left: -370px;
+  }
+
+  .design{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: left;
+   
+    margin-top:50px;
+    margin-left: -360px;
+  }
+
+  .portfolio-container{
+    align-items: center;
+  }
+
+  .june{
+margin-left: 30px;
+  }
+
+  .eye{
+margin-left: 50px;
+  }
+
+  .portrait1{
+margin-left: -10px;
+  }
+
+  .portrait2{
+margin-left: -10px;
+  }
+
+  .levis{
+    margin-left: 170px;
+  }
+
+  .levis-poster{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color:#f5f5f5;
+    text-align: center;
+   
+  }
+
+  .box{
+    background-color:#c1d2de;
+    height:150px;
+    width: 300px;
+  }
+  .gym{
+    margin-left: -70px;
+}
+
+.character{
+  margin-left: -100px;
+}
+
+#to-top{
+  font-size: 25px;
+}
+
+body {
+  padding: 25px;
+  background-color: #2F5061;
+  color: rgb(236, 236, 236);
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(201, 136, 136, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
+</style>
+<body>
+
+  <!-- ***********dark mode*********** -->
+  <button onclick="myFunction()"><img src="Images\dark and light mode.png" height="20px" width="20px"></button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<!-- ********character turn************ -->
+<script>
+  function lighton() {
+    document.getElementById('myimage').src = "Images/flipped characters.png";
+  }
+  function lightoff() {
+    document.getElementById('myimage').src = "Images/character.png";
+  }
+  </script>
+
+
+
+<!-- ************portfolio page************* -->
+
+<body>
+
+  
+  <div class="d-md-flex justify-content-around mx-5 mt-5">
+  <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="Images\character.png" width="300px" height="500px" />
+  <p style="margin-top:300px ; margin-left: -700px; font-size: 10px;">Click mouse and hold down!</p>
+    
+      <div>
+        <h2 class="Explore">Explore</h2>
+        <p class="design">Design is a <Br> Journey <br> Discovery</p>
+         </div>
+        </div>
+
+  <!-- **************post cards********* -->
+
+   
+  <div class="d-md-flex justify-content-around mx-5 mt-5 june">
+
+    <img src="Images\june-pride month.jpg" width="600px" height="400px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="Images\liberation.jpg" width="600px" height="400px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+
+<div class="container">
+
+<div class="d-md-flex justify-content-between mt-5">
+
+  <img src="Images\eye.JPG" width="600px" height="400px" class="eye" style="position:relative; left:-43px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> 
+  
+  <img src="Images\portrait 2.JPG" width="300px" height="400px" class="portrait1" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  <img src="Images\portrait 1.JPG" width="270px" height="400px"  class="portrait2" >
+</div>
+</div>
+  
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 mt-5 levis">
+              <img src="Images\levis poster.jpg" height="300px" width="300px" class="img-fluid" alt="poster">
+              <p class="levis-poster box mt-2"><b>Levis-Poster </b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 gym">
+              <img src="Images\fitness poster.jfif" height="300px" width="300px" class="img-fluid" alt="poster">
+              <p class="levis-poster box mt-2"><b>Gold's-gym-Poster</b><Br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 character">
+              <img src="Images\character desig-3.jpg" height="350px" width="300px" class="img-fluid" alt="poster">
+              <p class="levis-poster box mt-2"><b>Character Design</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <video width="500" height="500" controls>
+              <source src="Images\text animation.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <a href="#top" id="to-top"><img src="Images\to the top.png" height="200px" width="150px" style="margin-left:650px; " alt="To the top"></a>
+
+          <!-- *********end of portfolio page************ -->
+          <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+<i onclick="myFunction1(this)" class="fa fa-thumbs-up" ></i>
+
+<script>
+function myFunction1(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+                
+        </body>
+          </html>
+            
+            
+
+            
